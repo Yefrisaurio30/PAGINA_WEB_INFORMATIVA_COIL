@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COIL - Pagina Informativa</title>
+    <meta name="description" content="Pagina informativa sobre COIL.">
+    <meta name="keywords" content="COIL, emprendimiento, innovación, proyectos, colaboración internacional">
+    <meta property="og:title" content="COIL - Pagina Informativa">
+    <meta property="og:description" content="Pagina informativa sobre COIL.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+
+   
+    <canvas id="particles-canvas"></canvas>
+
+   
+    <header id="header">
+        <nav>
+            <div class="logo">COIL</div>
+            <ul class="Links">
+                <li><a href="#Inicio" class="active">Inicio</a></li>
+                <li><a href="#Filosofia">Filosofía</a></li>
+                <li><a href="#Proyectos">Proyectos</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Inicio">
+        <div class="Inicio_contenedorz">
+            <span class="badge"> COIL — Collaborative Online International Learning</span>
+            <h2>¡Bienvenidos a Nuestra Página Informativa!</h2>
+            <p>Relacionadas con el emprendimiento,
+realizadas por el grupo de estudiantes del Programa Tecnología en Desarrollo de Software de la
+Corporación Universitaria Minuto de Dios sede Villavicencio, con e l fin de socializar los
+aprendizajes obtenidos.</p>
+            <button id="Explorar-proyectos">Explorar Proyectos</button>
+        </div>
+        <div class="scroll-indicator">
+            <span>Desliza</span>
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    
+    <section id="Filosofia">
+        <div class="contenido fade-in">
+            <span class="section-tag">Nuestra Visión</span>
+            <h2>La Filosofía del Emprendimiento</h2>
+        </div>
+
+        <div class="filosofia-grid">
+            <div class="filosofia-card fade-in">
+                <div class="card-number">01</div>
+                <h3>Disciplina Estratégica</h3>
+                <p>El emprendimiento es una disciplina que combina visión estratégica, gestión financiera, innovación y adaptación constante.</p>
+                <ul class="card-list">
+                    <li>Visión estratégica</li>
+                    <li>Gestión financiera</li>
+                    <li>Innovación constante</li>
+                    <li>Tolerancia al riesgo</li>
+                    <li>Adaptación al cambio</li>
+                </ul>
+            </div>
+
+            <div class="filosofia-card fade-in">
+                <div class="card-number">02</div>
+                <h3>Gravedad Financiera</h3>
+                <p>Todo nuevo negocio enfrenta presiones constantes. El reto consiste en mantener el equilibrio mientras se alcanza la estabilidad.</p>
+                <ul class="card-list">
+                    <li>Costos operativos</li>
+                    <li>Falta de liquidez</li>
+                    <li>Competencia</li>
+                    <li>Cambios en la demanda</li>
+                    <li>Problemas regulatorios</li>
+                </ul>
+            </div>
+
+            <div class="filosofia-card fade-in">
+                <div class="card-number">03</div>
+                <h3>Aprendizaje Continuo</h3>
+                <p>La capacidad de aprender rápidamente es esencial. El fracaso es una herramienta de validación y crecimiento.</p>
+                <ul class="card-list">
+                    <li>Escuchar al mercado</li>
+                    <li>Analizar errores</li>
+                    <li>Ajustar modelos</li>
+                    <li>Mejorar procesos</li>
+                    <li>Reinventarse siempre</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="Proyectos">
+        <div class="section-header fade-in">
+            <span class="section-tag">Portafolio</span>
+            <h2>Nuestros Proyectos</h2>
+        </div>
+
+        <div class="proyectos-grid">
+
+            <div class="Tarjetas-Proyectos fade-in-left">
+                <div class="card-icon">💡</div>
+                <h3>Proyecto 1</h3>
+                <span class="team">👥 Juan Bejarano &amp; Miguel</span>
+                <p>Colocan el nombre del proyecto y una breve descripción de lo que trata.</p>
+                <button class="proyecto-btn" onclick="window.location.href='proyecto1.html'">
+                    Ver Proyecto →
+                </button>
+            </div>
+
+            <div class="Tarjetas-Proyectos fade-in-scale">
+                <div class="card-icon">📊</div>
+                <h3>Proyecto 2</h3>
+                <span class="team">👥 Juan Arias &amp; Brandon</span>
+                <p>Colocan el nombre del proyecto y una breve descripción de lo que trata.</p>
+                <button class="proyecto-btn" onclick="window.location.href='proyecto2.html'">
+                    Ver Proyecto →
+                </button>
+            </div>
+
+            <div class="Tarjetas-Proyectos fade-in-right">
+                <div class="card-icon">🌍</div>
+                <h3>Proyecto 3</h3>
+                <span class="team">👥 Santiago Mattos &amp; Carlos</span>
+                <p>Colocan el nombre del proyecto y una breve descripción de lo que trata.</p>
+                <button class="proyecto-btn" onclick="window.location.href='proyecto3.html'">
+                    Ver Proyecto →
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+  
+    <button id="back-to-top" title="Volver arriba">↑</button>
+
+ 
+    <footer>
+        <p>&copy; 2026 Página informativa sobre COIL</p>
+    </footer>
+
+    <script src="../JS/Index.js"></script>
+
+</body>
+</html>
