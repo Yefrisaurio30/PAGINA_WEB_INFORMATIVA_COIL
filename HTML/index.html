@@ -3,146 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COIL - Pagina Informativa</title>
-    <meta name="description" content="Pagina informativa sobre COIL.">
-    <meta name="keywords" content="COIL, emprendimiento, innovación, proyectos, colaboración internacional">
-    <meta property="og:title" content="COIL - Pagina Informativa">
-    <meta property="og:description" content="Pagina informativa sobre COIL.">
+    <title>Enciclopedia Digital: Investigación y Estadística</title>
+    <meta name="description" content="Guía maestra para el análisis de datos científicos.">
+    <meta name="keywords" content="Estadística, Investigación, Muestreo, Variables, Frecuencias, Dispersión">
+    <meta property="og:title" content="Enciclopedia Digital: Investigación y Estadística">
+    <meta property="og:description" content="Guía maestra para el análisis de datos científicos.">
     <meta property="og:type" content="website">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'></text></svg>">
     <link rel="stylesheet" href="../CSS/index.css">
 </head>
 <body>
 
-   
     <canvas id="particles-canvas"></canvas>
 
-   
     <header id="header">
         <nav>
             <div class="logo">COIL</div>
             <ul class="Links">
                 <li><a href="#Inicio" class="active">Inicio</a></li>
-                <li><a href="#Filosofia">Filosofía</a></li>
-                <li><a href="#Proyectos">Proyectos</a></li>
-                
+                <li><a href="#muestreo">Muestreo</a></li>
+                <li><a href="#variables">Variables</a></li>
+                <li><a href="#frecuencias">Frecuencias</a></li>
+                <li><a href="#descriptiva">Descriptiva</a></li>
+                <li><a href="#dispersión">Dispersión</a></li>
+                <li><a href="#distribuciones">Distribuciones</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="Inicio">
         <div class="Inicio_contenedorz">
-            <span class="badge"> COIL — Collaborative Online International Learning</span>
-            <h2>¡Bienvenidos a Nuestra Página Informativa!</h2>
-            <p>El grupo ha participado en experiencias COIL enfocadas en emprendimiento e innovación, donde ha desarrollado habilidades 
-                para identificar oportunidades de negocio, analizar estrategias de mercado y evaluar la viabilidad de ideas. Además, se ha 
-                trabajado con la Estrategia de Océano Azul, promoviendo la creación de propuestas innovadoras y diferenciadas que respondan a 
-                necesidades reales del entorno.
+            <span class="badge"> Pagina web informativa sobre el coil y analisis de datos cuantitativos</span>
+            <h2>Fundamentos de Investigación y Estadística</h2>
+            <p>
+                COIL: Guía maestra para el análisis de datos cuantitativos.
+                abarcando desde el diseño de investigación y muestreo hasta estadística descriptiva y distribuciones.
             </p>
-            <button id="Explorar-proyectos">Explorar Proyectos</button>
+            <button id="Explorar-proyectos" onclick="window.location.href='#muestreo'">Explorar Conceptos</button>
         </div>
-        <div class="scroll-indicator">
-            <span>Desliza</span>
-            <div class="mouse"></div>
-        </div>
+
     </section>
 
-    
-    <section id="Filosofia">
-        <div class="contenido fade-in">
-            <span class="section-tag">Nuestra Visión</span>
-            <h2>La Filosofía del Emprendimiento</h2>
+    <section id="muestreo">
+        <div class="contenido fade-in" style="text-align: center; max-width: 900px; margin: 0 auto;">
+            <span class="section-tag">El Universo de la Investigación</span>
+            <h2>Universo y Muestreo</h2>
+            <p style="color: var(--text-muted); font-size: 1.15rem; margin-bottom: 20px;">
+                En estadística, el <strong>universo</strong> representa la totalidad de elementos que poseen la característica que se desea estudiar.
+            </p>
+            <img src="../Img/Muestreo.png" alt="Concepto de Muestreo" style="width: 100%; max-height: 450px; object-fit: contain; border-radius: 12px; margin-top: 15px; box-shadow: 0 8px 30px rgba(0,0,0,0.2);">
         </div>
 
         <div class="filosofia-grid">
             <div class="filosofia-card fade-in">
                 <div class="card-number">01</div>
-                <h3>Disciplina Estratégica</h3>
-                <p>El emprendimiento es una disciplina que combina visión estratégica, gestión financiera, innovación y adaptación constante.</p>
-                <ul class="card-list">
-                    <li>Visión estratégica</li>
-                    <li>Gestión financiera</li>
-                    <li>Innovación constante</li>
-                    <li>Tolerancia al riesgo</li>
-                    <li>Adaptación al cambio</li>
-                </ul>
+                <h3>Alcance</h3>
+                <p>Define los límites espaciales y temporales de la investigación para evitar sesgos y asegurar resultados válidos.</p>
             </div>
 
             <div class="filosofia-card fade-in">
                 <div class="card-number">02</div>
-                <h3>Gravedad Financiera</h3>
-                <p>Todo nuevo negocio enfrenta presiones constantes. El reto consiste en mantener el equilibrio mientras se alcanza la estabilidad.</p>
-                <ul class="card-list">
-                    <li>Costos operativos</li>
-                    <li>Falta de liquidez</li>
-                    <li>Competencia</li>
-                    <li>Cambios en la demanda</li>
-                    <li>Problemas regulatorios</li>
-                </ul>
+                <h3>Importancia</h3>
+                <p>Un universo bien delimitado permite que las conclusiones obtenidas de la muestra sean generalizables de forma ética.</p>
             </div>
 
             <div class="filosofia-card fade-in">
                 <div class="card-number">03</div>
-                <h3>Aprendizaje Continuo</h3>
-                <p>La capacidad de aprender rápidamente es esencial. El fracaso es una herramienta de validación y crecimiento.</p>
+                <h3>El Muestreo</h3>
                 <ul class="card-list">
-                    <li>Escuchar al mercado</li>
-                    <li>Analizar errores</li>
-                    <li>Ajustar modelos</li>
-                    <li>Mejorar procesos</li>
-                    <li>Reinventarse siempre</li>
+                    <li><strong>Probabilístico:</strong> Todos tienen la misma oportunidad de ser elegidos (ej. aleatorio simple).</li>
+                    <li><strong>No Probabilístico:</strong> La selección depende del criterio del investigador.</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    
-    <section id="Proyectos">
-        <div class="section-header fade-in">
-            <span class="section-tag">Portafolio</span>
-            <h2>Nuestros Proyectos</h2>
+    <section id="variables" style="background-color: var(--secondary-color);">
+        <div class="section-header fade-in" style="text-align: center; margin-bottom: 40px;">
+            <span class="section-tag">Conceptos Clave</span>
+            <h2>Variables y Diseño de Investigación</h2>
+            <p style="text-align: center; color: var(--text-muted); max-width: 750px; margin: 20px auto; font-size: 1.15rem;">
+                El diseño de investigación es la estructura que guía la recolección de información precisa.
+            </p>
+            <img src="../Img/Variables y diseño de investigacion.png" alt="Variables y Datos" style="width: 100%; max-width: 800px; max-height: 450px; object-fit: contain; border-radius: 12px; margin: 15px auto; display: block; box-shadow: 0 8px 30px rgba(0,0,0,0.2);">
         </div>
 
         <div class="proyectos-grid">
-
             <div class="Tarjetas-Proyectos fade-in-left">
-                <h3>Proyecto 1</h3>
-                <span class="team">Juan Bejarano Y Miguel</span>
-                <p>Colocan el nombre del proyecto y una breve descripción de lo que trata.</p>
-                <button class="proyecto-btn" onclick="window.location.href='proyecto1.html'">
-                    Ver Proyecto →
-                </button>
+                <div class="card-icon" style="color: var(--accent-color);">#️⃣</div>
+                <h3>Variable Discreta</h3>
+                <span class="team">Valores enteros</span>
+                <p>Asume solo valores enteros, como el número de personas o elementos de un conjunto.</p>
             </div>
-
-            <div class="Tarjetas-Proyectos fade-in-scale">
-                <h3>Proyecto 2</h3>
-                <span class="team">Juan Arias Y Brandon</span>
-                <p>Colocan el nombre del proyecto y una breve descripción de lo que trata.</p>
-                <button class="proyecto-btn" onclick="window.location.href='proyecto2.html'">
-                    Ver Proyecto →
-                </button>
-            </div>
-
             <div class="Tarjetas-Proyectos fade-in-right">
-
-                <h3>Proyecto 3</h3>
-                <span class="team">Santiago Mattos Y Carlos</span>
-                <p>Colocan el nombre del proyecto y una breve descripción de lo que trata.</p>
-                <button class="proyecto-btn" onclick="window.location.href='proyecto3.html'">
-                    Ver Proyecto →
-                </button>
+                <div class="card-icon" style="color: var(--highlight-color);">📏</div>
+                <h3>Variable Continua</h3>
+                <span class="team">Intervalos</span>
+                <p>Puede tomar cualquier valor en un intervalo, como la estatura o el peso.</p>
             </div>
-
         </div>
     </section>
 
-  
+    <section id="frecuencias">
+        <div class="contenido fade-in" style="text-align: center; max-width: 900px; margin: 0 auto;">
+            <span class="section-tag">Análisis Visual</span>
+            <h2>Tablas de Frecuencia</h2>
+            <p style="color: var(--text-muted); font-size: 1.15rem; margin-bottom: 20px;">
+                Herramienta fundamental para organizar datos y facilitar su interpretación visual.
+            </p>
+            <img src="../Img/Tablas de frecuencia.png" alt="Gráfico de Barras y Frecuencias" style="width: 100%; max-height: 450px; object-fit: contain; border-radius: 12px; margin-bottom: 40px; box-shadow: 0 8px 30px rgba(0,0,0,0.2);">
+            
+            <div class="Bloque-contenido fade-in-scale" style="text-align: left; overflow-x: auto; padding: 0; background: transparent; border: none; box-shadow: none;">
+                <div style="background: var(--card-glass); border-radius: 16px; border: 1px solid rgba(0, 212, 255, 0.15); box-shadow: 0 10px 40px rgba(0,0,0,0.3); overflow: hidden; backdrop-filter: blur(12px);">
+                    <table style="width: 100%; min-width: 600px; border-collapse: collapse; color: var(--text-color); text-align: center;">
+                        <thead>
+                            <tr style="background: linear-gradient(90deg, rgba(11, 17, 32, 0.8), rgba(30, 41, 59, 0.8)); border-bottom: 2px solid var(--accent-color);">
+                                <th style="padding: 20px 25px; text-align: left; color: var(--accent-color); font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Categoría (X)</th>
+                                <th style="padding: 20px 15px; color: var(--text-muted); font-weight: 600; font-size: 0.85rem; letter-spacing: 1px;">F. Absoluta (f)</th>
+                                <th style="padding: 20px 15px; color: var(--text-muted); font-weight: 600; font-size: 0.85rem; letter-spacing: 1px;">F. Acumulada (F)</th>
+                                <th style="padding: 20px 15px; color: var(--text-muted); font-weight: 600; font-size: 0.85rem; letter-spacing: 1px;">F. Relativa (%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05); transition: all 0.3s;" onmouseover="this.style.background='rgba(0, 212, 255, 0.05)'; this.style.transform='scale(1.01)';" onmouseout="this.style.background='transparent'; this.style.transform='scale(1)';">
+                                <td style="padding: 20px 25px; text-align: left;">
+                                    <span style="display: inline-block; padding: 6px 14px; border-radius: 20px; background: rgba(0, 212, 255, 0.1); color: var(--accent-color); font-weight: 600; font-size: 0.9rem; border: 1px solid rgba(0, 212, 255, 0.2);">Excelente</span>
+                                </td>
+                                <td style="padding: 20px 15px; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 500;">10</td>
+                                <td style="padding: 20px 15px; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; color: var(--text-muted);">10</td>
+                                <td style="padding: 20px 15px; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; color: var(--highlight-color); font-weight: 600;">50%</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05); transition: all 0.3s;" onmouseover="this.style.background='rgba(0, 212, 255, 0.05)'; this.style.transform='scale(1.01)';" onmouseout="this.style.background='transparent'; this.style.transform='scale(1)';">
+                                <td style="padding: 20px 25px; text-align: left;">
+                                    <span style="display: inline-block; padding: 6px 14px; border-radius: 20px; background: rgba(124, 58, 237, 0.1); color: var(--highlight-color); font-weight: 600; font-size: 0.9rem; border: 1px solid rgba(124, 58, 237, 0.2);">Bueno</span>
+                                </td>
+                                <td style="padding: 20px 15px; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 500;">6</td>
+                                <td style="padding: 20px 15px; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; color: var(--text-muted);">16</td>
+                                <td style="padding: 20px 15px; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; color: var(--highlight-color); font-weight: 600;">30%</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05); transition: all 0.3s;" onmouseover="this.style.background='rgba(0, 212, 255, 0.05)'; this.style.transform='scale(1.01)';" onmouseout="this.style.background='transparent'; this.style.transform='scale(1)';">
+                                <td style="padding: 20px 25px; text-align: left;">
+                                    <span style="display: inline-block; padding: 6px 14px; border-radius: 20px; background: rgba(248, 250, 252, 0.1); color: var(--text-color); font-weight: 600; font-size: 0.9rem; border: 1px solid rgba(255, 255, 255, 0.2);">Regular</span>
+                                </td>
+                                <td style="padding: 20px 15px; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 500;">4</td>
+                                <td style="padding: 20px 15px; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; color: var(--text-muted);">20</td>
+                                <td style="padding: 20px 15px; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; color: var(--highlight-color); font-weight: 600;">20%</td>
+                            </tr>
+                            <tr style="background: rgba(0, 212, 255, 0.03);">
+                                <td style="padding: 20px 25px; text-align: left; font-weight: 700; color: var(--accent-color); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Total</td>
+                                <td style="padding: 20px 15px; font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--accent-color);">20</td>
+                                <td style="padding: 20px 15px; font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; color: var(--text-muted);">-</td>
+                                <td style="padding: 20px 15px; font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--accent-color);">100%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="descriptiva" style="background-color: var(--secondary-color);">
+        <div class="section-header fade-in" style="text-align: center; margin-bottom: 40px;">
+            <span class="section-tag">Métricas</span>
+            <h2 id="dispersión">Estadísticas Descriptivas y Dispersión</h2>
+        </div>
+
+        <div class="proyectos-grid">
+            <div class="Tarjetas-Proyectos fade-in-left">
+                <img src="../Img/Medidas de Tendencia central.png" alt="Media Mediana y Moda" style="width: 100%; max-height: 350px; border-radius: 8px; margin-bottom: 20px; object-fit: contain;">
+                <h3>1. Medidas de Centralización</h3>
+                <span class="team">Punto Medio</span>
+                <p style="font-size: 0.95rem; margin-bottom: 15px;">Indican el punto medio de un conjunto de datos:</p>
+                <ul class="card-list">
+                    <li><strong>Media:</strong> Promedio aritmético.</li>
+                    <li><strong>Mediana:</strong> El valor central al ordenar los datos.</li>
+                    <li><strong>Moda:</strong> El valor que más se repite.</li>
+                </ul>
+            </div>
+
+            <div class="Tarjetas-Proyectos fade-in-right">
+                <img src="../Img/Medidas de Dispercion.png" alt="Desviación Estándar" style="width: 100%; max-height: 350px; border-radius: 8px; margin-bottom: 20px; object-fit: contain;">
+                <h3>2. Medidas de Dispersión</h3>
+                <span class="team">Alejamiento de la Media</span>
+                <p style="font-size: 0.95rem; margin-bottom: 15px;">Miden qué tan alejados están los datos respecto a la media:</p>
+                <ul class="card-list">
+                    <li><strong>Rango:</strong> Diferencia entre máximo y mínimo.</li>
+                    <li><strong>Varianza:</strong> Promedio de los cuadrados de las desviaciones.</li>
+                    <li><strong>Desviación Est.:</strong> Dispersión real (raíz de la varianza).</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="distribuciones">
+        <div class="contenido fade-in" style="text-align: center; max-width: 900px; margin: 0 auto;">
+            <span class="section-tag">Modelos</span>
+            <h2>Distribuciones Estadísticas</h2>
+            <br>
+            <img src="../Img/Distribuciones Estadisticas.png" alt="Distribución Normal" style="width: 100%; max-height: 450px; object-fit: contain; border-radius: 12px; margin-bottom: 40px; box-shadow: 0 8px 30px rgba(0,0,0,0.2);">
+        </div>
+        
+        <div class="filosofia-grid">
+            <div class="filosofia-card fade-in">
+                <div class="card-number">01</div>
+                <h3>Distribución Normal</h3>
+                <p>Conocida como la Campana de Gauss, describe la mayoría de los fenómenos naturales y su concentración alrededor de la media.</p>
+            </div>
+            <div class="filosofia-card fade-in">
+                <div class="card-number">02</div>
+                <h3>Distribución Binomial</h3>
+                <p>Se utiliza cuando solo existen dos resultados posibles en cada evento estudiado: éxito o fracaso.</p>
+            </div>
+        </div>
+    </section>
+
     <button id="back-to-top" title="Volver arriba">↑</button>
 
- 
     <footer>
-        <p> 2026 Página informativa sobre COIL</p>
-        <p>Este apartado diseñado por Yefri Infante, Laura Gonzalez y Arley Ladino</p>
+        <p> 2026 Manual de Referencia Estadística - Guía Informativa</p>
     </footer>
 
     <script src="../JS/Index.js"></script>
