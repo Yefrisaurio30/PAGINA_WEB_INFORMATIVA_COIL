@@ -4,132 +4,314 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto 3 — COIL</title>
+
     <meta name="description" content="Detalles del Proyecto 3 COIL — Grupo Erika">
+
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+
     <link rel="stylesheet" href="../CSS/index.css">
+
+    <!-- SOLO estilos exclusivos de esta página -->
+    <style>
+
+        .banner-proyecto {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 24px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .contenido-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 18px;
+            margin-bottom: 25px;
+            transition: transform 0.5s ease;
+        }
+
+        .contenido-img:hover {
+            transform: scale(1.02);
+        }
+
+        .galeria-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .galeria-grid img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 18px;
+            transition: 0.4s ease;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .galeria-grid img:hover {
+            transform: translateY(-5px);
+        }
+
+        .frase-destacada {
+            margin-top: 25px;
+            padding: 20px;
+            border-left: 4px solid var(--highlight-color);
+            background: rgba(124, 58, 237, 0.08);
+            border-radius: 14px;
+            font-style: italic;
+            color: var(--gray-light);
+        }
+
+        @media(max-width:768px){
+
+            .banner-proyecto{
+                height: 320px;
+            }
+
+            .contenido-img{
+                height: 260px;
+            }
+
+        }
+
+    </style>
 </head>
 
 <body>
 
-    <!-- Fondo animado -->
+    <!-- Fondo -->
     <canvas id="particles-canvas"></canvas>
 
     <!-- Header -->
     <header id="header">
+
         <nav>
+
             <div class="logo">COIL</div>
+
             <ul class="Links">
                 <li><a href="../HTML/index.html">← Inicio</a></li>
             </ul>
+
         </nav>
+
     </header>
 
-    <!-- Contenido -->
+    <!-- CONTENIDO -->
     <section class="proyecto-detail">
 
         <h2>Proyecto 3</h2>
-        <p class="subtitle">Grupo Erika</p>
 
+        <p class="subtitle">Grupo Erika — Vidas al Aire</p>
+
+        <!-- Imagen principal -->
+        <img 
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1600&auto=format&fit=crop" 
+            alt="Jóvenes trabajando en proyectos sociales"
+            class="banner-proyecto"
+        >
+
+        <!-- CONTEXTO -->
         <div class="Bloque-contenido fade-in">
+
+            <img 
+                src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop"
+                alt="Conversación comunitaria"
+                class="contenido-img"
+            >
+
             <h3>Contexto</h3>
+
             <p>Las historias reales no se crean, se experimentan.</p>
+
             <p>
                 Este proyecto se enfoca en transformar experiencias reales en contenido que conecta, inspira y genera impacto social dentro de la comunidad.
             </p>
+
         </div>
 
+        <!-- INTRODUCCIÓN -->
         <div class="Bloque-contenido fade-in">
+
+            <img 
+                src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?q=80&w=1200&auto=format&fit=crop"
+                alt="Producción audiovisual"
+                class="contenido-img"
+            >
+
             <h3>Introducción</h3>
-            <p><strong>Vidas al Aire</strong> es una iniciativa comunicativa desarrollada por estudiantes de Comunicación Social y Periodismo de UNIMINUTO.</p>
+
+            <p>
+                <strong>Vidas al Aire</strong> es una iniciativa comunicativa desarrollada por estudiantes de Comunicación Social y Periodismo de UNIMINUTO.
+            </p>
+
             <p>
                 Su propósito es visibilizar las voces de la comunidad a través de relatos auténticos, testimonios y experiencias que reflejan la realidad social.
             </p>
+
             <p>
                 Busca generar reflexión, fortalecer el pensamiento crítico y promover una conexión más consciente con el entorno.
             </p>
+
         </div>
 
+        <!-- OBJETIVOS -->
         <div class="Bloque-contenido fade-in">
+
             <h3>Objetivo del Proyecto</h3>
+
             <ul>
                 <li>Visibilizar historias reales de la comunidad.</li>
                 <li>Generar impacto social mediante contenido auténtico.</li>
                 <li>Fomentar el pensamiento crítico en los jóvenes.</li>
                 <li>Promover la participación social a través de medios digitales.</li>
             </ul>
+
+            <div class="galeria-grid">
+
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1000&auto=format&fit=crop">
+
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1000&auto=format&fit=crop">
+
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1000&auto=format&fit=crop">
+
+            </div>
+
         </div>
 
+        <!-- DESARROLLO -->
         <div class="Bloque-contenido fade-in">
+
+            <img 
+                src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=1200&auto=format&fit=crop"
+                alt="Edición de contenido digital"
+                class="contenido-img"
+            >
+
             <h3>Desarrollo</h3>
+
             <p>El proyecto implementa diferentes estrategias de difusión:</p>
+
             <ul>
                 <li>Producción audiovisual para medios digitales.</li>
                 <li>Contenido social con enfoque comunitario.</li>
                 <li>Microcontenidos para redes sociales.</li>
                 <li>Producción de piezas radiales.</li>
             </ul>
+
             <p>
                 Estas estrategias permiten que las historias sean accesibles, dinámicas y cercanas al público objetivo.
             </p>
+
         </div>
 
+        <!-- HISTORIA -->
         <div class="Bloque-contenido fade-in">
+
+            <img 
+                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop"
+                alt="Joven emprendedora"
+                class="contenido-img"
+            >
+
             <h3>Historia Destacada</h3>
+
             <p>
                 Elizabeth, una joven de 18 años, decidió emprender para sostener sus estudios frente a limitaciones económicas.
             </p>
+
             <p>
                 A pesar de su esfuerzo, su alcance era reducido hasta que su historia fue difundida en una emisora comunitaria.
             </p>
+
             <p>
                 Esto permitió que su experiencia se convirtiera en inspiración para otros, logrando ser escuchada y reconocida.
             </p>
-            <p><em>“Cada persona tiene una historia, la diferencia está en quién la escucha.”</em></p>
+
+            <div class="frase-destacada">
+                “Cada persona tiene una historia, la diferencia está en quién la escucha.”
+            </div>
+
         </div>
 
+        <!-- PÚBLICO -->
         <div class="Bloque-contenido fade-in">
+
+            <img 
+                src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200&auto=format&fit=crop"
+                alt="Jóvenes universitarios"
+                class="contenido-img"
+            >
+
             <h3>Público Objetivo</h3>
+
             <p>
                 Dirigido a jóvenes universitarios interesados en temas sociales y en historias reales con impacto.
             </p>
+
             <ul>
                 <li>Interés por problemáticas sociales.</li>
                 <li>Consumo frecuente de contenido digital.</li>
                 <li>Búsqueda de contenido auténtico y significativo.</li>
             </ul>
+
         </div>
 
+        <!-- RESULTADOS -->
         <div class="Bloque-contenido fade-in">
+
             <h3>Resultados</h3>
+
             <p>
                 El proyecto busca generar impacto social mediante la difusión de historias reales que visibilicen experiencias de la comunidad.
             </p>
+
         </div>
 
+        <!-- MISIÓN -->
         <div class="Bloque-contenido fade-in">
+
             <h3>Misión</h3>
+
             <p>
                 Promover el análisis social, el pensamiento crítico y la participación activa mediante contenidos accesibles.
             </p>
+
         </div>
 
+        <!-- VISIÓN -->
         <div class="Bloque-contenido fade-in">
+
             <h3>Visión</h3>
+
             <p>
                 Consolidarse como una iniciativa reconocida por amplificar voces auténticas y contribuir a la transformación social.
             </p>
+
         </div>
 
-        <button class="volver-btn" onclick="window.location.href='../HTML/index.html'">
+        <!-- BOTÓN -->
+        <button 
+            class="volver-btn" 
+            onclick="window.location.href='../HTML/index.html'"
+        >
             ← Volver al Inicio
         </button>
 
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
+
         <p>2026 Página informativa sobre COIL</p>
+
         <p>Este apartado diseñado por Santiago Mattos y Carlos</p>
+
     </footer>
 
     <!-- Script -->
